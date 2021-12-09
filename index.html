@@ -20,47 +20,49 @@
     </header>
     <main>
         <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
-
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-
+            <form class="poll-form" id="poll-form">
+                <label>Question
+                    <input name='question'>
+                </label>
+                <label>Option One
+                    <input name='option-1'>
+                </label>
+                <label>Option Two
+                    <input name='option-2'>
+                </label>
+                <button>Start Poll</button>
+            </form>
+            </div>
+            <div class="buttons">
+                <div>
+                    <div>
+                        <button id="add-option-1">Vote One</button>
+                        <button id="add-option-2">Vote Two</button>
+                    </div>
+                    <div>
+                        <button id="undo-option-1">Undo One</button>
+                        <button id="undo-option-2">Undo Two</button>
+                    </div>
+                </div>
+                <button id="close-poll">Close Poll</button>
+            </div>
+        <div class="display-divs">
+            <div id="display-current-poll">
+                <p>Current Poll</p>
+                <p id="poll-question"></p>
+                <div id="options-display">
+                    <div id="option-1-display">
+                        <p id="option-1-name"></p>
+                        <p id="option-1-count"></p>
+                    </div>
+                    <div id="option-2-display">
+                        <p id="option-2-name"></p>
+                        <p id="option-2-count"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="display-past-polls"></div>
+        </div>
         </section>
     </main>
     <footer>
